@@ -2,69 +2,97 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Satvik Hulikere - Resume</title>
-</head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>Satvik Hulikere - Resume</title>
+    <link rel="stylesheet" href="style.css"> </head>
 <body>
+
     <header>
-        <h1>Satvik Hulikere</h1>
-        <p>Saint Johns, FL 32259 | (904)-293-6799 | <a href="mailto:hulikere.satvik@gmail.com">hulikere.satvik@gmail.com</a></p>
+        <div class="container">
+            <h1>Satvik Hulikere</h1>
+            <p>Saint Johns, FL 32259 | (904)-293-6799 | <a href="mailto:hulikere.satvik@gmail.com">hulikere.satvik@gmail.com</a></p>
+        </div>
     </header>
 
-    <section id="education">
-        <h2>Education</h2>
-        <p><strong>University of Central Florida, Orlando, FL</strong></p>
-        <p>Bachelor of Science in Computer Science, Expected Fall 2026 | GPA: 3.46</p>
-        <p>Relevant Coursework: Data Structures & Algorithms, Discrete Mathematics, Object-Oriented Programming, System Software, Database Systems</p>
-    </section>
+    <div class="container"> <section id="education">
+            <h2>Education</h2>
+            <p><strong>University of Central Florida, Orlando, FL</strong></p>
+            <p>Bachelor of Science in Computer Science, Expected Fall 2026 | GPA: 3.46</p>
+            <p>Relevant Coursework: Data Structures & Algorithms, Discrete Mathematics, Object-Oriented Programming, System Software, Database Systems</p>
+        </section>
 
-    <section id="skills">
-        <h2>Skills</h2>
-        <h3>Data Science & Machine Learning</h3>
-        <p>Python (Pandas, NumPy), scikit-learn, TensorFlow, Regression, Time Series Forecasting, Feature Engineering, Exploratory Data Analysis (EDA), Model Evaluation (RMSE), Data Cleaning & Visualization</p>
-        <h3>Programming</h3>
-        <p>Python, Java, SQL, C, JavaScript (ES6+), Bash/Linux</p>
-        <h3>Databases & Data Systems</h3>
-        <p>MySQL, MongoDB (Atlas)</p>
-        <h3>Cloud & Deployment</h3>
-        <p>AWS (EC2, S3), Google Cloud (Compute Engine), DigitalOcean</p>
-        <h3>Tools & Visualization</h3>
-        <p>Jupyter Notebook, Streamlit, Tableau, Plotly, Folium, Git/GitHub, Postman</p>
-        <h3>Web & Backend (Supporting)</h3>
-        <p>Node.js, Express.js, REST APIs, JWT Authentication, JSON, AJAX</p>
-        <h3>Frontend (Supporting)</h3>
-        <p>React, Tailwind CSS, Three.js</p>
-    </section>
+        <section id="skills">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                
+                <div class="skill-category">
+                    <h3>Data Science & Machine Learning</h3>
+                    <p>Python (Pandas, NumPy), scikit-learn, TensorFlow, Regression, Time Series Forecasting, Feature Engineering, EDA, Model Evaluation (RMSE)</p>
+                </div>
 
-    <section id="projects">
-        <h2>Projects</h2>
-        <ul>
-            <li><a href="project1.html">Redzone Play-Calling Efficiency – NFL</a> | Black and Gold Analytics Team Project | January – May 2025</li>
-            <li><a href="project2.html">Workout Performance Prediction</a> | Personal Project | Summer 2025</li>
-        </ul>
-    </section>
+                <div class="skill-category">
+                    <h3>Programming</h3>
+                    <p>Python, Java, SQL, C, JavaScript (ES6+), Bash/Linux</p>
+                </div>
 
-    <section id="experience">
-        <h2>Experience</h2>
-        <p><strong>UCF Knight Shadow Program – Orange County Sheriff’s Office | Virtual</strong></p>
-        <p>AI / IT & Data Science Shadow | December 2025</p>
-        <ul>
-            <li>Observed real-world data management, analytics workflows, and cybersecurity practices in a government IT environment</li>
-            <li>Analyzed how structured data systems support operational decision-making and security compliance</li>
-            <li>Gained exposure to professional AI and data science applications through direct shadowing of IT teams</li>
-        </ul>
-    </section>
+                <div class="skill-category">
+                    <h3>Databases & Data Systems</h3>
+                    <p>MySQL, MongoDB (Atlas)</p>
+                </div>
 
-    <section id="certifications">
-        <h2>Certifications</h2>
-        <p>IBM Data Science Professional Certificate — Coursera</p>
-        <ul>
-            <li>Python (Pandas, NumPy), SQL, Data Analysis & Visualization, Machine Learning</li>
-            <li>Hands-on labs using Jupyter Notebooks</li>
-        </ul>
-    </section>
+                <div class="skill-category">
+                    <h3>Cloud & Deployment</h3>
+                    <p>AWS (EC2, S3), Google Cloud (Compute Engine), DigitalOcean</p>
+                </div>
 
-    <footer>
+                <div class="skill-category">
+                    <h3>Tools & Visualization</h3>
+                    <p>Jupyter Notebook, Streamlit, Tableau, Plotly, Folium, Git/GitHub, Postman</p>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Web & Backend (Supporting)</h3>
+                    <p>Node.js, Express.js, REST APIs, JWT Authentication, JSON, AJAX</p>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Frontend (Supporting)</h3>
+                    <p>React, Tailwind CSS, Three.js</p>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <ul>
+                <li><a href="project1.html">Redzone Play-Calling Efficiency – NFL</a> | Black and Gold Analytics Team Project | January – May 2025</li>
+                <li><a href="project2.html">Workout Performance Prediction</a> | Personal Project | Summer 2025</li>
+            </ul>
+        </section>
+
+        <section id="experience">
+            <h2>Experience</h2>
+            <p><strong>UCF Knight Shadow Program – Orange County Sheriff’s Office | Virtual</strong></p>
+            <p>AI / IT & Data Science Shadow | December 2025</p>
+            <ul>
+                <li>Observed real-world data management, analytics workflows, and cybersecurity practices in a government IT environment</li>
+                <li>Analyzed how structured data systems support operational decision-making and security compliance</li>
+                <li>Gained exposure to professional AI and data science applications through direct shadowing of IT teams</li>
+            </ul>
+        </section>
+
+        <section id="certifications">
+            <h2>Certifications</h2>
+            <p>IBM Data Science Professional Certificate — Coursera</p>
+            <ul>
+                <li>Python (Pandas, NumPy), SQL, Data Analysis & Visualization, Machine Learning</li>
+                <li>Hands-on labs using Jupyter Notebooks</li>
+            </ul>
+        </section>
+
+    </div> <footer>
         <p>&copy; 2026 Satvik Hulikere</p>
     </footer>
+
 </body>
 </html>

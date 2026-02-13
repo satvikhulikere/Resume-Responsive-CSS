@@ -1,0 +1,167 @@
+/* =========================================
+   1. GLOBAL RESET & TYPOGRAPHY
+   ========================================= */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f9;
+    padding-bottom: 40px;
+}
+
+a {
+    color: #0056b3;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+/* =========================================
+   2. MOBILE LAYOUT (Base Styles - 412px)
+   ========================================= */
+/* Wraps all content to provide padding on mobile */
+.container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+header {
+    background-color: #2c3e50;
+    color: #fff;
+    padding: 30px 20px;
+    text-align: center;
+    border-bottom: 5px solid #e74c3c; /* Accent color */
+}
+
+header h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 0.9rem;
+    color: #ecf0f1;
+}
+
+header a {
+    color: #f1c40f; /* Yellow links in header for contrast */
+}
+
+section {
+    background: #fff;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+h2 {
+    color: #2c3e50;
+    border-bottom: 2px solid #e74c3c;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+}
+
+h3 {
+    color: #34495e;
+    margin-top: 15px;
+    font-size: 1.1rem;
+}
+
+ul {
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+/* Navigation for Project Pages */
+nav a {
+    display: inline-block;
+    background-color: #e74c3c;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 4px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    background-color: #c0392b;
+    text-decoration: none;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #7f8c8d;
+    font-size: 0.9rem;
+}
+
+/* =========================================
+   3. DESKTOP LAYOUT (Media Query > 768px)
+   Targets 1920px screens
+   ========================================= */
+@media (min-width: 768px) {
+    /* Limit max width so content doesn't stretch across 1920px */
+    .container {
+        max-width: 1000px; 
+    }
+
+    header {
+        padding: 40px 0;
+    }
+
+    header h1 {
+        font-size: 3rem;
+    }
+
+    header p {
+        font-size: 1.1rem;
+    }
+
+    /* Grid Layout for Skills Section */
+    .skills-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* Two columns */
+        gap: 20px;
+    }
+    
+    .skill-category {
+        background: #fdfdfd;
+        padding: 15px;
+        border: 1px solid #eee;
+        border-radius: 6px;
+    }
+    
+    .skill-category h3 {
+        margin-top: 0;
+        color: #e74c3c;
+    }
+
+    /* Projects Page Layout adjustments */
+    #project-image img {
+        max-width: 80%; /* Don't let image take full width on giant screens */
+    }
+}
